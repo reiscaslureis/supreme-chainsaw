@@ -9,12 +9,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 function SignIn() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings!</Text>
+        <Text>Dashboard!</Text>
       </View>
     );
   }
 
-export function Settings() {
+export function Dashboard() {
     const navigation = useNavigation()
     const Tab = createBottomTabNavigator();
     const Stack = createStackNavigator();
@@ -23,15 +23,15 @@ export function Settings() {
         <View style = {styles.container}>
 
             <View style = {styles.header}>
-                <Text>Settings</Text>
+                <Text>Dashboard</Text>
             </View>
 
             <View style = {styles.body}>
-                <Text>Settings</Text>
+                <Text>Dashboard</Text>
             </View>
 
             <View style = {styles.footer}>
-                <Text>Settings</Text>
+                <Text>Dashboard</Text>
             </View>
 
         </View>
