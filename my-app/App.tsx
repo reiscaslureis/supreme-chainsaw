@@ -2,7 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SignIn } from './src/screens/SignIn';
 import { SignUp } from './src/screens/SignUp';
-import { Settings } from './src/screens/Settings';
+import { Devices } from './src/screens/Devices';
 import { Dashboard } from './src/screens/Dashboard';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -27,12 +27,6 @@ export default function App() {
             <Stack.Screen 
                 name='SignUp'
                 component = { SignUp }
-                options = {{ headerShown: false, animation: 'none' }}
-            />
-
-            <Stack.Screen 
-                name='Settings'
-                component = { Settings }
                 options = {{ headerShown: false, animation: 'none' }}
             />
 

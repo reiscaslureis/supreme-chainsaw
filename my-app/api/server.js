@@ -6,7 +6,7 @@ const middlewares = jsonServer.defaults();
 server.use(jsonServer.bodyParser)
 
 // Custom route that requires authentication
-server.post('/api/auth', (req, res) => {
+server.post('/api/auth/signin', (req, res) => {
 
     if (req.body['username'] != "username" || req.body['password'] != "password") {
         res.status(401).json({ error: 'Unauthorized' });

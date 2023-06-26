@@ -5,6 +5,7 @@ import React from "react";
 import { AntDesign, Entypo  } from '@expo/vector-icons'; 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import { DeviceList } from "../../components/DeviceList";
 
 function SignIn() {
     return (
@@ -14,26 +15,12 @@ function SignIn() {
     );
   }
 
-export function Settings() {
+export function Devices() {
     const navigation = useNavigation()
     const Tab = createBottomTabNavigator();
     const Stack = createStackNavigator();
 
     return (
-        <View style = {styles.container}>
-
-            <View style = {styles.header}>
-                <Text>Settings</Text>
-            </View>
-
-            <View style = {styles.body}>
-                <Text>Settings</Text>
-            </View>
-
-            <View style = {styles.footer}>
-                <Text>Settings</Text>
-            </View>
-
-        </View>
+        <DeviceList/>
     )
 } 
