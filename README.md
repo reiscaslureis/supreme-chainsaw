@@ -17,3 +17,11 @@ npm install
 ```
 npx expo start
 ```
+
+```
+cd api
+```
+
+```
+node server.js
+```
