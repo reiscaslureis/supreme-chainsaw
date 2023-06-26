@@ -5,6 +5,7 @@ import React from "react";
 import { AntDesign, Entypo  } from '@expo/vector-icons'; 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
+import Draggable from 'react-native-draggable';
 
 function SignIn() {
     return (
@@ -20,20 +21,17 @@ export function Dashboard() {
     const Stack = createStackNavigator();
 
     return (
-        <View style = {styles.container}>
-
-            <View style = {styles.header}>
-                <Text>Dashboard</Text>
-            </View>
-
-            <View style = {styles.body}>
-                <Text>Dashboard</Text>
-            </View>
-
-            <View style = {styles.footer}>
-                <Text>Dashboard</Text>
-            </View>
-
+        <View style={{backgroundColor: 'blue', flex: 1}} >
+            <Draggable 
+                renderSize={80} 
+                x={200}
+                y={300}
+                onLongPress={()=>console.log('long press')}
+                onShortPressRelease={()=>console.log('press drag')}
+                onPressIn={()=>console.log('in press')}
+                onPressOut={()=>console.log('out press')}
+            />  
         </View>
-    )
+    );  
+    
 } 
