@@ -22,7 +22,7 @@ export function DeviceList() {
   const renderListItem = (item: ListItem) => {
     return (
       <View style={{ padding: 10 }}>
-        <TouchableOpacity onPress={DialogMenu} >
+        <TouchableOpacity onPress={() => console.log(item.title)} >
         <Text>{item.title}</Text>
         </TouchableOpacity>
       </View>
